@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Home | Jassim's Website{% endblock %}
+
+{% block content %}
+<div class="main-container">
+    <header>
+        <h1 class="main-title">Jassim's ChillSite</h1>
+    </header>
+    <nav class="main-nav">
+        <ul class="main-list">
+            <input type="checkbox" id="active">
+            <label for="active" class="close"></label>
+            <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">My Works</a></li>
+        </ul>
+    </nav>
+</div>
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

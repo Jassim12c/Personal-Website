@@ -1,0 +1,67 @@
+/* || UNIVERSAL SELECTORS */
+
+
+
+/* || LINKS */
+
+.main-nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav{
+    grid-area: nav;
+}
+
+/* || LISTS */
+
+.main-list{
+    list-style-type: none;
+}
+
+/* || TITLES */
+
+header {
+    grid-area: header;
+    background-color: #383839;
+    box-shadow: 5px 8px 8px grey;
+}
+
+.main-title{
+    grid-area: header;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+/* || CONTAINERS */
+
+.main-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header"
+        "nav . .";
+}
+
+/* || MEDIA QUERIES */
+
+@media only screen and (min-width: 768px) {...}
+
+@media only screen and (min-width: 992px) {...}
+
+@media only screen and (min-width: 1200px) {...}
+
+
+/* || 2D IMAGES */
+
+.menu-btn{
+    position: absolute;
+    font-size: 20px;
+    left: 5px;
+    top: 0px;
+}
+
+/* || REMOVE */
